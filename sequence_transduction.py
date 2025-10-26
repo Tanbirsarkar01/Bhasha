@@ -12,3 +12,7 @@ trans_tokens = model.generate(**input_tokens)
 result = tokenizer.batch_decode(trans_tokens, skip_special_tokens=True)[0]
 
 print("The hindi sentence is:",result)
+
+
+#docker build -t enhi-translator:latest .
+# docker run -it enhi-translator:latest
